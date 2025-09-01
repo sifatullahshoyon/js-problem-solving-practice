@@ -88,14 +88,79 @@ Zero যদি 0 এর সমান হয়। */
 
 // * Leap Year Checker
 
-const year = 2024;
+// const year = 1900;
 
-if (year % 4 === 0) {
-  if (year % 100 !== 0) {
-    console.log(year + " is a leap year");
+// if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+//   console.log(year + " is a leap year");
+// } else {
+//   console.log(year + " is not a leap year");
+// }
+
+// * Login Validation
+
+// const username = "admin";
+// const password = "12345";
+
+// if (username === "admin" && password === "12345") {
+//   console.log("Login successful");
+// } else {
+//   console.log("Invalid username or password");
+// }
+
+// * Number Range Check
+
+// * একটি সংখ্যা ইনপুট দেওয়া আছে। যদি 10 থেকে 20 এর মধ্যে হয়, প্রিন্ট করো In range, না হলে Out of range।
+
+// let inputNumber = 9.5;
+
+// if (inputNumber >= 10 && inputNumber <= 20) {
+//   console.log("In range");
+// } else {
+//   console.log("Out of range");
+// }
+
+//* Three Number Largest
+
+//? তিনটি সংখ্যা দেওয়া আছে। সবচেয়ে বড় সংখ্যাটি বের করো।
+
+// let a = 3000;
+// let b = 6200;
+// let c = +1200;
+
+// if (a > b && a > c) {
+//   console.log(a + " is the largest number");
+// } else if (b > a && b > c) {
+//   console.log(b + " is the largest number");
+// } else {
+//   console.log(c + " is the largest number");
+// }
+
+/**
+ * Traffic Light
+
+একটি string ইনপুট ( "red", "yellow", "green" )।
+
+যদি "red" → Stop
+
+যদি "yellow" → Wait
+
+যদি "green" → Go।
+(Hint: switch case ব্যবহার করো)
+ * **/
+
+const signal = "green";
+
+switch (signal) {
+  case "red":
+    console.log("Stop");
+    break;
+  case "yellow":
+    console.log("Wait");
+    break;
+  case "green": {
+    console.log("Go");
+    break;
   }
-} else if (year % 400 === 0) {
-  console.log(year + " is a leap year");
-} else {
-  console.log(year + " is not a leap year");
+  default:
+    console.log("Invalid signal color");
 }
