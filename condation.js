@@ -148,19 +148,135 @@ Zero যদি 0 এর সমান হয়। */
 (Hint: switch case ব্যবহার করো)
  * **/
 
-const signal = "green";
+const signal = "blue";
 
-switch (signal) {
-  case "red":
-    console.log("Stop");
+// switch (signal) {
+//   case "red":
+//     console.log("Stop");
+//     break;
+//   case "yellow":
+//     console.log("Wait");
+//     break;
+//   case "green": {
+//     console.log("Go");
+//     break;
+//   }
+//   default:
+//     console.log("Invalid signal color");
+// }
+
+// if (signal === "red") {
+//   console.log("Stop");
+// } else if (signal === "yellow") {
+//   console.log("Wait");
+// } else if (signal === "green") {
+//   console.log("Go");
+// } else {
+//   console.log("Invalid signal color");
+// }
+
+//* Season Finder
+
+/**ইনপুট হবে একটি মাসের নাম বা নম্বর।
+
+প্রিন্ট করো কোন season (উদাহরণ:
+
+December, January, February → Winter
+
+March, April, May → Spring
+
+June, July, August → Summer
+
+September, October, November → Autumn **/
+
+// const month = "december";
+
+// switch (month.toLocaleLowerCase()) {
+//   case "december":
+//     console.log("winter");
+//   case "january":
+//     console.log("winter");
+//   case "february":
+//     console.log("winter");
+//     break;
+//   case "march":
+//     console.log("spring");
+//   case "april":
+//     console.log("spring");
+//   case "may":
+//     console.log("spring");
+//     break;
+//   case "june":
+//     console.log("summer");
+//     break;
+//   case "july":
+//     console.log("summer");
+//   case "august":
+//     console.log("summer");
+//     break;
+//   case "september":
+//     console.log("autumn");
+//   case "october":
+//     console.log("autumn");
+//   case "november":
+//     console.log("autumn");
+//     break;
+//   default:
+//     console.log("Invalid month");
+// }
+
+const month = "february";
+
+switch (month.toLowerCase()) {
+  case "december":
+  case "january":
+  case "february":
+    console.log("Winter");
     break;
-  case "yellow":
-    console.log("Wait");
+
+  case "march":
+  case "april":
+  case "may":
+    console.log("Spring");
     break;
-  case "green": {
-    console.log("Go");
+
+  case "june":
+  case "july":
+  case "august":
+    console.log("Summer");
     break;
-  }
+
+  case "september":
+  case "october":
+  case "november":
+    console.log("Autumn");
+    break;
+
   default:
-    console.log("Invalid signal color");
+    console.log("Invalid month");
+}
+
+/**
+ * Vowel or Consonant
+
+ইনপুট হবে একটি letter।
+
+যদি vowel (a, e, i, o, u) হয় → Vowel
+
+অন্যথায় → Consonant
+ * 
+ * **/
+
+const latter = "p";
+
+switch (latter.toLowerCase()) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    console.log("Vowel");
+    break;
+  default:
+    console.log("Consonant");
 }
